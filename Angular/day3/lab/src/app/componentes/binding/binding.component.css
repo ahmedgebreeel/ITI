@@ -1,0 +1,14 @@
+div{
+    height: 250px;
+    border: 1px solid ;
+    margin: auto;
+    width: 50%;
+    /* background-color: antiquewhite; */
+}
+div *{
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 15px;
+
+}
