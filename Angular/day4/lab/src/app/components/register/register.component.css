@@ -1,0 +1,25 @@
+div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5rem;
+
+}   
+
+div * {
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.input{
+    width: 15rem;
+}
+
+.btn{
+    width: 5rem;
+    
+}
+
+
+

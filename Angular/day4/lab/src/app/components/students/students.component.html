@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+    </thead>
+    <tbody>
+        @for (student of stdArray; track $index) {
+
+            <tr>
+                <td>{{student.name}}</td>
+                <td>{{student.age}}</td>
+    
+            </tr>
+        }
+      
+    </tbody>
+</table>
+

@@ -1,0 +1,15 @@
+
+<div>
+    <input class="input" type="text" placeholder="Name" [(ngModel)] = "name">
+    @if(name.length == 0){
+        <span style="color: red;">name is reqired</span>
+    }
+    @if(name && name.length < 3){
+        <span style="color: red;">name should be more than 3 characters</span>
+    }
+    <input class="input" type="number" placeholder="Age"[(ngModel)] = "age">
+    @if (age && (+age < 20 || +age >30)){
+        <span style="color: red;">age should be more than or equal 20 and less than or equal 30 </span>
+    }
+    <input class="btn"  type="button" value="Add" (click) = "add()">
+</div>
