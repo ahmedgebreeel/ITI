@@ -1,0 +1,38 @@
+<div class="container border">
+    <div class="row">
+        <div class="col">
+            <form [formGroup]="formValidation" class="form alert alert-success mt-3">
+                <div class="form-group d-flex mt-2 text-center">
+                    <label class="text-center w-25">Name</label>
+                    <input formControlName="name" class="form-control w-50" type="text">
+                    @if(!nameValid){
+
+                        <div style="color: red;"> name is required and should be at least 3 characters</div>
+                    }
+                </div>
+                <div class="form-group d-flex mt-2 text-center">
+                    <label class="text-center w-25">Age</label>
+                    <input formControlName="age" class="form-control w-50" type="number">
+                    @if(!ageValid){
+
+                        <div style="color: red;"> age is required and shold be  20 &lt; age &lt; 50</div>
+                    }
+                </div>
+                <div class="form-group d-flex mt-2 text-center">
+                    <label class="text-center w-25">Address</label>
+                    <input formControlName="address" class="form-control w-50" type="text">
+                    @if(!addressValid){
+
+                        <div style="color: red;"> address is required and should be at max 100 characters</div>
+                    }
+
+
+                </div>
+                <div class="form-group mt-2 text-center">
+                    <input (click) = "submit()" class="m-auto btn btn-outline-success" type="submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
