@@ -1,0 +1,10 @@
+<div class="d-flex flex-wrap justify-content-center gap-5 w-50 m-auto">
+    @for (std of students; track std.id) {
+
+        <app-one-student [oneStudent] = "std"></app-one-student>
+    }
+</div>
+
+<br> <br>
+<a class= "btn btn-outline-success" style="margin-left: 80rem; font-size: 1.5rem;" routerLink="/add">+</a>
+

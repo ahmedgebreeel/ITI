@@ -1,0 +1,44 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "ronaldo",
+      "age": "28",
+      "email": "ronaldo@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "messi",
+      "age": "24",
+      "email": "messi@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "nyemar",
+      "age": 25,
+      "email": "nyemar@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "toni",
+      "age": 28,
+      "email": "toni@gmail.com"
+    }
+    
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

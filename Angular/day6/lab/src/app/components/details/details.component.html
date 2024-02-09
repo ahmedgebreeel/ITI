@@ -1,0 +1,10 @@
+@if(student){
+    <div class="alert alert-dark w-50 m-auto text-center">
+        <p class="text-danger">Name: {{student.name}}</p>
+        <p class="text-danger">Age: {{student.age}}</p>
+        <p class="text-danger">Email: {{student.email}}</p>
+    </div>
+
+}@else {
+    <h1 class="text-danger">Loading...</h1>
+}

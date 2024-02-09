@@ -1,0 +1,23 @@
+@if (student){
+
+    <div class="alert alert-dark d-flex flex-column align-items-center gap-2 w-25 m-auto">
+        <div>
+            <label>Name:</label>
+            <input #name class = "m-3" type="text" [value]="student.name">
+        </div>
+        <div>
+            <label>Age:</label>
+            <input #age class = "m-3" type="text" [value]="student.age">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input #email class = "m-3" type="text" [value]="student.email">
+        </div>
+        <div >
+            <a class="btn btn-success m-2" (click)="update(name.value,age.value,email.value)" routerLink="/students">Update</a>
+            <a class="btn btn-success m-2" (click)="del()" routerLink="/students">Delete</a>
+    
+        </div>
+        
+    </div>
+}

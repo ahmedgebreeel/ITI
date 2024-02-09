@@ -1,0 +1,18 @@
+<div class="alert alert-dark d-flex flex-column align-items-center gap-2 w-25 m-auto">
+    <div>
+        <label>Name:</label>
+        <input #name class = "m-3" type="text">
+    </div>
+    <div>
+        <label>Age:</label>
+        <input #age class = "m-3" type="text">
+    </div>
+    <div>
+        <label>Email:</label>
+        <input #email class = "m-3" type="text">
+    </div>
+    <div >
+        <a class="btn btn-success m-2" (click)="add(name.value,age.value,email.value)" routerLink="/students">Add</a>
+    </div>
+    
+</div>
