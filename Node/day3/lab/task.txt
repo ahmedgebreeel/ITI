@@ -1,0 +1,11 @@
+Start your http server that handle both GET and POST requests from the client to meet the
+following scenario
+o Server listen on port 7000
+o Client’s request to localhost:7000/main.html and visit to localhost:7000 ; Get same
+response where he can enter his name:string, mobile:number, addr:string,
+email:string within a form
+o The response of this request is a greeting page named welcome.html displaying the
+following message “Welcome {clientName} your entered data as follows
+ MobileNumber : { MobileNumber }
+ Email : { MobileNumber }
+ Address : { MobileNumber }
