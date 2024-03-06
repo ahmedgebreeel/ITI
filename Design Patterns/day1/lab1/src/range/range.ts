@@ -27,10 +27,28 @@
 // } 
 
 
-export function range(start: number, end: number, step: number){
+// export function range(start: number, end: number, step: number){
 
-    return {
-        [Symbol.iterator]:  function*(){
+//     return {
+//         [Symbol.iterator]:  function*(){
+
+//             while(start <=end ){
+//                 yield start;
+//                 start+=step;
+//             }
+
+//         }
+//     }
+    
+// } 
+
+
+
+
+
+
+
+ export function* range(start: number, end: number, step: number){
 
             while(start <=end ){
                 yield start;
@@ -38,6 +56,8 @@ export function range(start: number, end: number, step: number){
             }
 
         }
-    }
     
-} 
+
+
+
+
