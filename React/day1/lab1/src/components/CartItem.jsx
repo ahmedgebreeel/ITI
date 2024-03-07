@@ -1,6 +1,6 @@
-import { useState } from "react";
 
-const CartItem = ({product, Increment, Decrement})=>{
+
+const CartItem = ({product, Increment, Decrement, Delete})=>{
     
    
 
@@ -10,6 +10,7 @@ const CartItem = ({product, Increment, Decrement})=>{
             <span className="border border-b-black m-5 p-3">{product.counter}</span>
             <button onClick={()=>Increment(product)} className="border border-blue-500 m-5 p-3">+</button>
             <button onClick={()=>Decrement(product)} className="border border-blue-500 m-5 p-3">-</button>
+            <button onClick={()=>Delete(product)} className="border border-blue-500 m-5 p-3">Delete</button>
 
         </div>
     )
