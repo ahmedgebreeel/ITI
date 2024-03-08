@@ -1,9 +1,8 @@
 import { useState } from "react";
 import CartItem from "./CartItem";
-import MyCounter from './MyCounter';
+import MyCounter from "./MyCounter";
 
-const Cart = ({products, Increment, Decrement, Delete, Reset}) => {
- 
+const Cart = ({ products, Increment, Decrement, Delete, Reset }) => {
   return (
     <div>
       {!products.length && <h2>no Items</h2>}

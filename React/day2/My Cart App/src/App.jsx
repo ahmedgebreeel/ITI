@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Cart from "./components/Cart"
-import Navbar from './components/Navbar';
-
-
+import Cart from "./components/Cart";
+import Navbar from "./components/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import About from './pages/About';
 
 function App() {
   const [products, setProducts] = useState([
@@ -57,13 +57,28 @@ function App() {
     setProducts(newProducts);
   };
 
-
   return (
-    <>
-     <Navbar itemsInCart={products.length} />
-     <Cart products={products} Increment={Increment} Decrement={Decrement}  Delete={Delete} Reset={Reset} />
-    </>
-  )
+    <BrowserRouter>
+      <Navbar itemsInCart={products.length} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Cart
+                products={products}
+                Increment={Increment}
+                Decrement={Decrement}
+                Delete={Delete}
+                Reset={Reset}
+              />
+            </>
+          }
+        />
+        <Route path="/about" element={<About/>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
